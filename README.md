@@ -48,20 +48,34 @@ Exploratory Data Analysis to find insights from the dataset, using various visua
 
 ### Pre tuned MSE result
 ![Scores1](img/PreTunedMSE.png)
-<p align="justify">High Precision and Recall score indicates that our model accurately makes correct prediction for every classes
+<p align="justify">This is the Mean Squared Error(MSE) score result for our pre tuned model. The model used is CatBoost Regressor, since it has the best result from cross validation process. However, there's still room for improvement, for example, the model's hyperparameter can be tuned.
 </p>
 
 ### Pre tuned visualized result
 ![Scores2](img/PreTunedRes.png)
-<p align="justify">High Precision and Recall score indicates that our model accurately makes correct prediction for every classes
+<p align="justify">The chart shows that our model seems to perform well, regarding that the blue line represents the perfect regression line, although a few number of predictions fall far from the regression line.
 </p>
 
 ### Post tuned MSE result
 ![Scores3](img/AfterTunedMSE.png)
-<p align="justify">High Precision and Recall score indicates that our model accurately makes correct prediction for every classes
-</p>
+<p align="justify">Compared to the previous non-tuned model's performance, there is a slight improvment, showing that tuning the model's hyperparameter do improve the model's performance</p>
 
 ### Post tuned visualized result
-![Scores4](img/AfterTunedMSE.png)
-<p align="justify">High Precision and Recall score indicates that our model accurately makes correct prediction for every classes
+![Scores4](img/AfterTunedRes.png)
+<p align="justify">The chart shows that majority of the prediction remains the same. It is to be expected, since the tuned model shows slight performance compared to the pre-tuned model's performance.
 </p>
+
+### Conclusion 
+- CatBoost algorithm shows the strongest result, since the MSE score is higher than the rest of the algorithms score. 
+- Hyperparameter aspect of the model has been tuned, and showed better result, indicating that the tuning is successful.
+
+### Business Recommendations
+- Real estate agents can use this model to guide pricing strategies.
+- Buyers can leverage predictions to assess whether a property is fairly priced.
+- Companies on real estate industry can use this model as a guide for marketing and pricing strategies.
+
+### Skills utilized in this project
+- Data Preprocessing: Imputation, encoding, and scaling.
+- Machine Learning: Building and evaluating Classification Models such as extreme gradient boosting(XGB), random forest, catboost, light gradient boosting(LGBM), and support vector regressor(SVR).
+- Hyperparameter Tuning: Using Grid Search to search the best hyperparameter and apply it to the classifier and shows a better result.
+- Data Analysis: Analize each variables and see how it affects the target varaible and find insights on how each variables correlate to each other.
